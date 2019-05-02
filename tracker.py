@@ -59,14 +59,6 @@ class MainApp(QMainWindow , ui):
         self.pushButton_22.clicked.connect(self.search_user)
         self.pushButton_21.clicked.connect(self.edit_type)
 
-    def make_pw_hash(password):
-        return hashlib.sha256(str.encode(password)).hexdigest()
-
-    def check_pw_hash(password, hash):
-        if make_pw_hash(password)== hash:
-            return True
-        return False
-
 
 
 
